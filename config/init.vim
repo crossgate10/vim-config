@@ -405,3 +405,5 @@ endfunction
 call s:main()
 
 " vim: set ts=2 sw=2 tw=80 noet :
+
+let g:fern_disable_startup_warnings = 1

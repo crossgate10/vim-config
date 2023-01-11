@@ -101,6 +101,6 @@ function! s:numtr(number, charset) abort
 	return l:result
 endfunction
 
-let &tabline='%!Tabline()'
+" let &tabline='%!Tabline()'
 
 " vim: set ts=2 sw=2 tw=80 noet :

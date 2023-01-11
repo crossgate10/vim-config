@@ -9,6 +9,11 @@ if get(g:, 'disable_mappings')
 	finish
 endif
 
+if dein#tap('vim-go')
+	nnoremap <Leader>g :GoDef<CR>
+	nnoremap <Leader>b :GoDefPop<CR>
+endif
+
 " Elite-mode {{{
 " ----------
 if get(g:, 'elite_mode')
@@ -131,8 +136,10 @@ xnoremap <S-Tab> <gv
 " nmap <<  <<_
 
 " Drag current line/s vertically and auto-indent
-nnoremap <Leader>k <cmd>move-2<CR>==
-nnoremap <Leader>j <cmd>move+<CR>==
+" nnoremap <Leader>k <cmd>move-2<CR>==
+" nnoremap <Leader>j <cmd>move+<CR>==
+nnoremap <Leader>k <cmd>move-2<CR>
+nnoremap <Leader>j <cmd>move+<CR>
 xnoremap <Leader>k :move'<-2<CR>gv=gv
 xnoremap <Leader>j :move'>+<CR>gv=gv
 
